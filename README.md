@@ -26,6 +26,7 @@ Connect the OpenWeather API and fetch the data. We use python to transform data,
    - sudo pip install pandas
    - sudo pip install s3fs
    - sudo pip install pyarrow
+   - sudo pip install requests
 4. Once this is installed, check if the airflow has been installed right. Use command airflow to check this. Run "airflow standalone" running this command will give the initial credentials. Copy and paste the credentials to use it later.
 5. In the active running instance, go to security and access the security group. Edit the inbound rules and create a new role. Set it to "all traffic", "anywhere IPv4".  
 7. Run the airflow server and scheduler using- airflow scheduler & airflow webserver --port 8080 & [port 8080 is what I'm using]
@@ -38,4 +39,6 @@ Connect the OpenWeather API and fetch the data. We use python to transform data,
    - ls
    - sudo nano airflow.cfg
    - In the dags folder, adjust the file name. Save the modified buffer and exit.
+12. Once the file is saved, re-run the airflow commands and login. You should be able to see the Dag file inside the airflow.
+13. Click and open the file and you should be able to run it manually. Once it runs successfully, the data should be visisble in S3 bucket.
    
