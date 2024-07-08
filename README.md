@@ -41,4 +41,10 @@ Connect the OpenWeather API and fetch the data. We use python to transform data,
    - In the dags folder, adjust the file name. Save the modified buffer and exit.
 12. Once the file is saved, re-run the airflow commands and login. You should be able to see the Dag file inside the airflow.
 13. Click and open the file and you should be able to run it manually. Once it runs successfully, the data should be visisble in S3 bucket.
+
+Here's how the Airflow UI looks like
+![Airflow Interface-DAG](https://github.com/namratha997/ETL-Pipeline-with-Apache-Airflow-and-Amazon-S3/blob/main/Picture1.png)
+![Airflow Project UI](https://github.com/namratha997/ETL-Pipeline-with-Apache-Airflow-and-Amazon-S3/blob/main/Picture2.png)
+![Graph](https://github.com/namratha997/ETL-Pipeline-with-Apache-Airflow-and-Amazon-S3/blob/main/Picture3.png)
+![logs](https://github.com/namratha997/ETL-Pipeline-with-Apache-Airflow-and-Amazon-S3/blob/main/Picture4.png)
    
